@@ -12,12 +12,12 @@ public class ListaSet {
 		set.add("Maria");
 		set.add("Luiz");
 		set.add("Renato");
+		set.add("Ca");
 
-		System.out.println(set.contains("Luiz"));
+		set.removeIf(x -> x.length() >=3);
 		
 		for(String p: set) {
 			System.out.println(p);
 		}
 	}
-
 }
